@@ -4,7 +4,7 @@ async function main() {
   const adapter = await navigator.gpu?.requestAdapter();
   const device = await adapter?.requestDevice();
   if (!device) {
-    fail('need a browser that supports WebGPU');
+    alert('need a browser that supports WebGPU');
     return;
   }
   // Get a WebGPU context from the canvas and configure it
